@@ -1,0 +1,165 @@
+= form_for @car, html: { class: "form form-horizontal car" } do |f|
+  .form-group
+    = f.label :brand, class: 'control-label col-lg-2', required: true
+    .col-lg-10
+      = f.text_field :brand, class: 'form-control'
+    = f.error_span(:brand)
+  .form-group
+    = f.label :name, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :name, class: 'form-control', required: true
+    = f.error_span(:name)
+  .form-group
+    = f.label :base_price, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :base_price, class: 'form-control'
+    = f.error_span(:base_price)
+  .form-group
+    = f.label :battery_capacity, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :battery_capacity, class: 'form-control'
+    = f.error_span(:battery_capacity)
+  .form-group
+    = f.label :range, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :range, class: 'form-control'
+    = f.error_span(:range)
+  .form-group
+    = f.label :dc_charging, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :dc_charging, class: 'form-control'
+    = f.error_span(:dc_charging)
+  .form-group
+    = f.label :ac_charging, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :ac_charging, class: 'form-control'
+    = f.error_span(:ac_charging)
+  .form-group
+    = f.label :plug_type, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :plug_type, class: 'form-control'
+    = f.error_span(:plug_type)
+  .form-group
+    = f.label :consumption, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :consumption, class: 'form-control'
+    = f.error_span(:consumption)
+  .form-group
+    = f.label :rental_battery, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :rental_battery, class: 'form-control'
+    = f.error_span(:rental_battery)
+  .form-group
+    = f.label :top_speed, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :top_speed, class: 'form-control'
+    = f.error_span(:top_speed)
+  .form-group
+    = f.label :continuous_speed, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :continuous_speed, class: 'form-control'
+    = f.error_span(:continuous_speed)
+  .form-group
+    = f.label :acceleration, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :acceleration, class: 'form-control'
+    = f.error_span(:acceleration)
+  .form-group
+    = f.label :seats, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :seats, class: 'form-control'
+    = f.error_span(:seats)
+  .form-group
+    = f.label :frunk_space, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :frunk_space, class: 'form-control'
+    = f.error_span(:frunk_space)
+  .form-group
+    = f.label :trunk_space, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :trunk_space, class: 'form-control'
+    = f.error_span(:trunk_space)
+  .form-group
+    = f.label :frunk_space_big, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :frunk_space_big, class: 'form-control'
+    = f.error_span(:frunk_space_big)
+  .form-group
+    = f.label :weight, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :weight, class: 'form-control'
+    = f.error_span(:weight)
+  .form-group
+    = f.label :battery_voltage, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :battery_voltage, class: 'form-control'
+    = f.error_span(:battery_voltage)
+  .form-group
+    = f.label :camper_mode, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :camper_mode, class: 'form-control'
+    = f.error_span(:camper_mode)
+  .form-group
+    = f.label :interiour_sounds, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :interiour_sounds, class: 'form-control'
+    = f.error_span(:interiour_sounds)
+  .form-group
+    = f.label :exteriour_sounds, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :exteriour_sounds, class: 'form-control'
+    = f.error_span(:exteriour_sounds)
+  .form-group
+    = f.label :drive_axle, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :drive_axle, class: 'form-control'
+    = f.error_span(:drive_axle)
+  .form-group
+    = f.label :max_power, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :max_power, class: 'form-control'
+    = f.error_span(:max_power)
+  .form-group
+    = f.label :max_regen, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :max_regen, class: 'form-control'
+    = f.error_span(:max_regen)
+  .form-group
+    = f.label :battery_temp_control, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :battery_temp_control, class: 'form-control'
+    = f.error_span(:battery_temp_control)
+  .form-group
+    = f.label :battery_cell_type, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :battery_cell_type, class: 'form-control'
+    = f.error_span(:battery_cell_type)
+  .form-group
+    = f.label :battery_chemistry, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :battery_chemistry, class: 'form-control'
+    = f.error_span(:battery_chemistry)
+  .form-group
+    = f.label :motor_type, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :motor_type, class: 'form-control'
+    = f.error_span(:motor_type)
+  .form-group
+    = f.label :charging_network, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :charging_network, class: 'form-control'
+    = f.error_span(:charging_network)
+  .form-group
+    = f.label :towing_capacity, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :towing_capacity, class: 'form-control'
+    = f.error_span(:towing_capacity)
+  .form-group
+    = f.label :app_access, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :app_access, class: 'form-control'
+    = f.error_span(:app_access)
+  .form-group
+    .col-lg-offset-2.col-lg-10
+      = f.submit nil,class: 'btn btn-primary'
+      = link_to t('.cancel', :default => t("helpers.links.cancel")), cars_path, :class => 'btn btn-default'

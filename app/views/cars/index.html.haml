@@ -1,0 +1,80 @@
+- model_class = Car
+.page-header
+  %h1=t '.title', :default => model_class.model_name.human.pluralize.titleize
+%table.table.table-striped
+  %thead
+    %tr
+      %th=t '.actions', :default => t("helpers.actions")
+      %th= sortable :brand
+      %th= sortable :name
+      %th= sortable :base_price
+      %th= sortable :battery_capacity
+      %th= sortable :range
+      %th= sortable :dc_charging
+      %th= sortable :ac_charging
+      %th= sortable :plug_type
+      %th= sortable :consumption
+      %th= sortable :rental_battery
+      %th= sortable :top_speed
+      %th= sortable :continuous_speed
+      %th= sortable :acceleration
+      %th= sortable :seats
+      %th= sortable :frunk_space
+      %th= sortable :trunk_space
+      %th= sortable :frunk_space_big
+      %th= sortable :weight
+      %th= sortable :battery_voltage
+      %th= sortable :camper_mode
+      %th= sortable :interiour_sounds
+      %th= sortable :exteriour_sounds
+      %th= sortable :drive_axle
+      %th= sortable :max_power
+      %th= sortable :max_regen
+      %th= sortable :battery_temp_control
+      %th= sortable :battery_cell_type
+      %th= sortable :battery_chemistry
+      %th= sortable :motor_type
+      %th= sortable :charging_network
+      %th= sortable :towing_capacity
+      %th= sortable :app_access
+  %tbody
+    - @cars.each do |car|
+      %tr
+        %td
+          = link_to t('.show', :default => t("helpers.links.show")), car_path(car), :class => 'btn btn-default btn-xs'
+          = link_to t('.edit', :default => t("helpers.links.edit")), edit_car_path(car), :class => 'btn btn-default btn-xs'
+          = link_to t('.destroy', :default => t("helpers.links.destroy")), car_path(car), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs btn-danger'
+        %td= car.brand
+        %td= car.name
+        %td= car.base_price
+        %td= car.battery_capacity
+        %td= car.range
+        %td= car.dc_charging
+        %td= car.ac_charging
+        %td= car.plug_type
+        %td= car.consumption
+        %td= car.rental_battery
+        %td= car.top_speed
+        %td= car.continuous_speed
+        %td= car.acceleration
+        %td= car.seats
+        %td= car.frunk_space
+        %td= car.trunk_space
+        %td= car.frunk_space_big
+        %td= car.weight
+        %td= car.battery_voltage
+        %td= car.camper_mode
+        %td= car.interiour_sounds
+        %td= car.exteriour_sounds
+        %td= car.drive_axle
+        %td= car.max_power
+        %td= car.max_regen
+        %td= car.battery_temp_control
+        %td= car.battery_cell_type
+        %td= car.battery_chemistry
+        %td= car.motor_type
+        %td= car.charging_network
+        %td= car.towing_capacity
+        %td= car.app_access
+        
+= link_to t('.new', :default => t("helpers.links.new")), new_car_path, :class => 'btn btn-primary'
