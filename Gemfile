@@ -20,6 +20,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'turbolinks', '~> 5'
 gem 'twitter-bootstrap-rails'
 gem 'uglifier', '>= 1.3.0'
+gem "font-awesome-rails"
 
 group :development, :test do
   gem 'capybara', '~> 2.13'
