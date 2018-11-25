@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cardata</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Base price</th>
+      <th>Battery capacity</th>
+      <th>Range</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cardata.each do |cardatum| %>
+      <tr>
+        <td><%= cardatum.name %></td>
+        <td><%= cardatum.base_price %></td>
+        <td><%= cardatum.battery_capacity %></td>
+        <td><%= cardatum.range %></td>
+        <td><%= link_to 'Show', cardatum %></td>
+        <td><%= link_to 'Edit', edit_cardatum_path(cardatum) %></td>
+        <td><%= link_to 'Destroy', cardatum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cardatum', new_cardatum_path %>

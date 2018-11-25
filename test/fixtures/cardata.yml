@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  base_price: 1.5
+  battery_capacity: 1.5
+  range: 1.5
+
+two:
+  name: MyString
+  base_price: 1.5
+  battery_capacity: 1.5
+  range: 1.5

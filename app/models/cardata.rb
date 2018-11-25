@@ -1,0 +1,2 @@
+class Cardata < ApplicationRecord
+end

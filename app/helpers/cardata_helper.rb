@@ -1,0 +1,2 @@
+module CardataHelper
+end
