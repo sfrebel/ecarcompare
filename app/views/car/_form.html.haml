@@ -1,0 +1,25 @@
+= form_for @car, html: { class: "form form-horizontal car" } do |f|
+  .form-group
+    = f.label :name, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :name, class: 'form-control', required: true
+    = f.error_span(:name)
+  .form-group
+    = f.label :base_price, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :base_price, class: 'form-control', required: true
+    = f.error_span(:base_price)
+  .form-group
+    = f.label :battery_capacity, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :battery_capacity, class: 'form-control', required: true
+    = f.error_span(:battery_capacity)
+  .form-group
+    = f.label :range, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :range, class: 'form-control', required: true
+    = f.error_span(:range)
+  .form-group
+    .col-lg-offset-2.col-lg-10
+      = f.submit nil,class: 'btn btn-primary'
+      = link_to t('.cancel', :default => t("helpers.links.cancel")), cars_path, :class => 'btn btn-default'

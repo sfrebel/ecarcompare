@@ -1,6 +1,6 @@
-class CreateCardata < ActiveRecord::Migration[5.1]
+class CreateCars < ActiveRecord::Migration[5.1]
   def change
-    create_table :cardata do |t|
+    create_table :cars do |t|
       t.string :name
       t.float :base_price
       t.float :battery_capacity
