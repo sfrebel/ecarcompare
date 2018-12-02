@@ -1,12 +1,11 @@
 # frozen_string_literal: true
 
 class CarsController < ApplicationController
-  helper_method :sort_column, :sort_direction
   before_action :set_car, only: %i[show edit update destroy]
 
   # GET /cars
   def index
-    @cars = Car.order(sort_column + ' ' + sort_direction)
+    @cars = Car.all
   end
 
   # GET /cars/1
@@ -47,14 +46,6 @@ class CarsController < ApplicationController
   end
 
   private
-
-  def sort_column
-    Car.column_names.include?(params[:sort]) ? params[:sort] : 'name'
-  end
-
-  def sort_direction
-    %w[asc desc].include?(params[:direction]) ? params[:direction] : 'asc'
-  end
 
   # Use callbacks to share common setup or constraints between actions.
   def set_car
