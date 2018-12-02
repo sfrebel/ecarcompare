@@ -1,42 +1,42 @@
 - model_class = Car
 .page-header
   %h1=t '.title', :default => model_class.model_name.human.pluralize.titleize
-%table.table.table-striped.pretty
+%table.table.table-striped.pretty.cars_table
   %thead
     %tr
       %th=t '.actions', :default => t("helpers.actions")
-      %th= sortable :brand
-      %th= sortable :name
-      %th= sortable :base_price
-      %th= sortable :battery_capacity
-      %th= sortable :range
-      %th= sortable :dc_charging
-      %th= sortable :ac_charging
-      %th= sortable :plug_type
-      %th= sortable :consumption
-      %th= sortable :rental_battery
-      %th= sortable :top_speed
-      %th= sortable :continuous_speed
-      %th= sortable :acceleration
-      %th= sortable :seats
-      %th= sortable :frunk_space
-      %th= sortable :trunk_space
-      %th= sortable :frunk_space_big
-      %th= sortable :weight
-      %th= sortable :battery_voltage
-      %th= sortable :camper_mode
-      %th= sortable :interiour_sounds
-      %th= sortable :exteriour_sounds
-      %th= sortable :drive_axle
-      %th= sortable :max_power
-      %th= sortable :max_regen
-      %th= sortable :battery_temp_control
-      %th= sortable :battery_cell_type
-      %th= sortable :battery_chemistry
-      %th= sortable :motor_type
-      %th= sortable :charging_network
-      %th= sortable :towing_capacity
-      %th= sortable :app_access
+      %th=  :brand
+      %th=  :name
+      %th=  :base_price
+      %th=  :battery_capacity
+      %th=  :range
+      %th=  :dc_charging
+      %th=  :ac_charging
+      %th=  :plug_type
+      %th=  :consumption
+      %th=  :rental_battery
+      %th=  :top_speed
+      %th=  :continuous_speed
+      %th=  :acceleration
+      %th=  :seats
+      %th=  :frunk_space
+      %th=  :trunk_space
+      %th=  :frunk_space_big
+      %th=  :weight
+      %th=  :battery_voltage
+      %th=  :camper_mode
+      %th=  :interiour_sounds
+      %th=  :exteriour_sounds
+      %th=  :drive_axle
+      %th=  :max_power
+      %th=  :max_regen
+      %th=  :battery_temp_control
+      %th=  :battery_cell_type
+      %th=  :battery_chemistry
+      %th=  :motor_type
+      %th=  :charging_network
+      %th=  :towing_capacity
+      %th=  :app_access
   %tbody
     - @cars.each do |car|
       %tr

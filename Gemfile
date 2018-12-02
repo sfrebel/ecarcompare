@@ -9,8 +9,10 @@ end
 
 ruby '2.4.0'
 
+gem 'font-awesome-rails'
 gem 'haml'
 gem 'haml-rails'
+gem 'jquery-rails'
 gem 'mysql2'
 gem 'pg'
 gem 'puma', '~> 3.7'
@@ -20,7 +22,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'turbolinks', '~> 5'
 gem 'twitter-bootstrap-rails'
 gem 'uglifier', '>= 1.3.0'
-gem "font-awesome-rails"
 
 group :development, :test do
   gem 'capybara', '~> 2.13'
@@ -29,13 +30,13 @@ group :development, :test do
 end
 
 group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'rubocop', require: false
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '>= 3.3.0'
-  gem "better_errors"
-  gem "binding_of_caller"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
